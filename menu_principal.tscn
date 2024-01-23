@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://7ejg2werhr4t"]
+
+[ext_resource type="Script" path="res://menu_principal.gd" id="1_hlapy"]
+
+[node name="menuPrincipal" type="Node2D"]
+script = ExtResource("1_hlapy")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 6.0
+offset_top = 142.0
+offset_right = 1150.0
+offset_bottom = 165.0
+theme_type_variation = &"HeaderLarge"
+text = "plataforma 2d"
+horizontal_alignment = 1
+
+[node name="botao_iniciar" type="Button" parent="Label"]
+layout_mode = 0
+offset_left = 442.0
+offset_top = 130.0
+offset_right = 712.0
+offset_bottom = 161.0
+text = "iniciar"
+
+[connection signal="pressed" from="Label/botao_iniciar" to="." method="_on_botao_iniciar_pressed"]
